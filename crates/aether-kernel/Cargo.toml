@@ -1,0 +1,13 @@
+[package]
+name = "aether-kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aether-hal = { path = "../aether-hal" }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
